@@ -22,6 +22,12 @@ METAL specifications used in Zope to power HTML and XML templates.
 SimpleTAL is an independent implementation of TAL; there are no
 dependencies on Zope nor is any of the Zope work re-used.
 
+%description -l pl
+SimpleTAL to samodzielna implementacja specyfikacji TAL, TALES i METAL
+u¿ywanych w Zope do wspomagania szablonów HTML i XML. SimpleTAL to
+niezale¿na implementacja TAL; nie zale¿y od Zope i nie jest ponownym
+u¿yciem ¿adnej z prac Zope.
+
 %package examples
 Summary:	Example files for SimpleTAL
 Summary(pl):	Pliki przyk³adów dla SimpleTAL
