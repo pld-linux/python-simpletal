@@ -3,7 +3,7 @@
 
 Summary:	Stand alone implementation of the TAL, TALES and METAL specifications
 Summary(pl):	Niezale¿na implementacja specyfikacji TAL, TALES i METAL
-Name:		python-%{module}
+Name:		python-simpletal
 Version:	3.12
 Release:	0.1
 License:	BSD
