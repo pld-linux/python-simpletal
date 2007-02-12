@@ -2,7 +2,7 @@
 %define		module	%(echo %{fname} | tr A-Z a-z)
 
 Summary:	Stand alone implementation of the TAL, TALES and METAL specifications
-Summary(pl):	Niezale¿na implementacja specyfikacji TAL, TALES i METAL
+Summary(pl.UTF-8):   NiezaleÅ¼na implementacja specyfikacji TAL, TALES i METAL
 Name:		python-simpletal
 Version:	3.12
 Release:	0.1
@@ -22,23 +22,23 @@ METAL specifications used in Zope to power HTML and XML templates.
 SimpleTAL is an independent implementation of TAL; there are no
 dependencies on Zope nor is any of the Zope work re-used.
 
-%description -l pl
+%description -l pl.UTF-8
 SimpleTAL to samodzielna implementacja specyfikacji TAL, TALES i METAL
-u¿ywanych w Zope do wspomagania szablonów HTML i XML. SimpleTAL to
-niezale¿na implementacja TAL; nie zale¿y od Zope i nie jest ponownym
-u¿yciem ¿adnej z prac Zope.
+uÅ¼ywanych w Zope do wspomagania szablonÃ³w HTML i XML. SimpleTAL to
+niezaleÅ¼na implementacja TAL; nie zaleÅ¼y od Zope i nie jest ponownym
+uÅ¼yciem Å¼adnej z prac Zope.
 
 %package examples
 Summary:	Example files for SimpleTAL
-Summary(pl):	Pliki przyk³adów dla SimpleTAL
+Summary(pl.UTF-8):   Pliki przykÅ‚adÃ³w dla SimpleTAL
 Group:		Development/Languages/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description examples
 Example files for SimpleTAL. 
 
-%description examples -l pl
-Pliki przyk³adów dla SimpleTAL.
+%description examples -l pl.UTF-8
+Pliki przykÅ‚adÃ³w dla SimpleTAL.
 
 %prep
 %setup -q -n %{fname}-%{version}
