@@ -2,7 +2,7 @@
 %define		module	%(echo %{fname} | tr A-Z a-z)
 
 Summary:	Stand alone implementation of the TAL, TALES and METAL specifications
-Summary(pl.UTF-8):   Niezależna implementacja specyfikacji TAL, TALES i METAL
+Summary(pl.UTF-8):	Niezależna implementacja specyfikacji TAL, TALES i METAL
 Name:		python-simpletal
 Version:	3.12
 Release:	0.1
@@ -30,7 +30,7 @@ użyciem żadnej z prac Zope.
 
 %package examples
 Summary:	Example files for SimpleTAL
-Summary(pl.UTF-8):   Pliki przykładów dla SimpleTAL
+Summary(pl.UTF-8):	Pliki przykładów dla SimpleTAL
 Group:		Development/Languages/Python
 Requires:	%{name} = %{version}-%{release}
 
