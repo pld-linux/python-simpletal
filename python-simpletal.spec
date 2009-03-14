@@ -4,12 +4,12 @@
 Summary:	Stand alone implementation of the TAL, TALES and METAL specifications
 Summary(pl.UTF-8):	Niezależna implementacja specyfikacji TAL, TALES i METAL
 Name:		python-simpletal
-Version:	3.12
+Version:	4.1
 Release:	0.1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://www.owlfish.com/software/simpleTAL/downloads/%{fname}-%{version}.tar.gz
-# Source0-md5:	4c34dc80dba22d9f7ea7ff7fd2e2bea1
+# Source0-md5:	16c5673382967310b336c68591ae6786
 URL:		http://www.owlfish.com/software/simpleTAL/
 BuildRequires:	python
 %pyrequires_eq	python-modules
@@ -65,6 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes.txt README.txt documentation/html
 %{py_sitescriptdir}/%{module}
+%{py_sitescriptdir}/%{fname}-%{version}-*.egg-info
 
 %files examples
 %defattr(644,root,root,755)
