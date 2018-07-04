@@ -4,16 +4,16 @@
 Summary:	Stand alone implementation of the TAL, TALES and METAL specifications
 Summary(pl.UTF-8):	Niezależna implementacja specyfikacji TAL, TALES i METAL
 Name:		python-simpletal
-Version:	4.1
-Release:	0.1
+Version:	5.2
+Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://www.owlfish.com/software/simpleTAL/downloads/%{fname}-%{version}.tar.gz
-# Source0-md5:	16c5673382967310b336c68591ae6786
+# Source0-md5:	0671b1e26e7d6a1d075b6d0924c0e3d4
 URL:		http://www.owlfish.com/software/simpleTAL/
 BuildRequires:	rpmbuild(macros) >= 1.710
-BuildRequires:	python
-%pyrequires_eq	python-modules
+BuildRequires:	python3
+%pyrequires_eq	python3-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,13 +45,13 @@ Pliki przykładów dla SimpleTAL.
 %setup -q -n %{fname}-%{version}
 
 %build
-%py_build
+%py3_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%py_install
+%py3_install
 
 find $RPM_BUILD_ROOT%{py_sitescriptdir}/%{module}/ -name \*.py | xargs rm -f
 
@@ -63,8 +63,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes.txt README.txt documentation/html
-%{py_sitescriptdir}/%{module}
-%{py_sitescriptdir}/%{fname}-%{version}-*.egg-info
+%{py3_sitescriptdir}/%{module}
+%{py3_sitescriptdir}/%{fname}-%{version}-*.egg-info
 
 %files examples
 %defattr(644,root,root,755)
